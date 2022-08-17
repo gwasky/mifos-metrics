@@ -31,7 +31,7 @@ logging.basicConfig(format='[%(asctime)s] - [%(levelname)-8s] - [%(name)s:%(line
 logger = logging.getLogger("main")
 
 # connection
-db = "mifostenant-FikiaFinance"
+db = "test"
 engine = engine.create_engine("mysql+pymysql://%s:%s@%s/%s" % (os.getenv('PROD_DB_USR'), os.getenv('PROD_DB_PASS'), os.getenv('PROD_DB_URL'), db))
 
 INCLUDE_INTEREST = True
